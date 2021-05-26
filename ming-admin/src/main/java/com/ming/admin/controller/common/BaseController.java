@@ -2,12 +2,14 @@ package com.ming.admin.controller.common;
 
 import com.ming.upms.common.util.ShiroUtils;
 import com.ming.upms.system.domain.UpmsUserDO;
+import io.swagger.annotations.Api;
 import org.springframework.stereotype.Controller;
 
 /**
  * 控制器基类
  * @author jie_ming514
  */
+@Api("基本信息类")
 @Controller("baseController")
 public class BaseController {
 

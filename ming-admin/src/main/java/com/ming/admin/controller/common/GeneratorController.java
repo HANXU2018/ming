@@ -1,6 +1,7 @@
 package com.ming.admin.controller.common;
 
 import com.ming.upms.common.service.GeneratorService;
+import io.swagger.annotations.Api;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,6 +15,7 @@ import java.io.IOException;
 /**
  * @author jie_ming514
  */
+@Api("代码生成器")
 @RestController
 @RequestMapping("/common/generator")
 public class GeneratorController {

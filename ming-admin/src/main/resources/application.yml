@@ -7,6 +7,7 @@ server:
   port: 8081
   session-timeout: 1800
 
+
 # Spring配置
 spring:
   # 模板引擎
@@ -20,6 +21,10 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
   profiles:
     active: test
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
 
 mybatis:
   # 搜索指定包别名

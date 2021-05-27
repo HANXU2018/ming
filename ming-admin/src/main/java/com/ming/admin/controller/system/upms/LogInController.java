@@ -88,12 +88,12 @@ public class LogInController extends BaseController {
         //检验验证码
         try {
             String random = (String) request.getSession().getAttribute(RandomValidateCodeUtil.RANDOMCODEKEY);
-            if (StringUtils.isBlank(verify)) {
-                return R.error("请输入验证码！");
-            }
-            if(!random.equalsIgnoreCase(verify)) {
-                return R.error("验证码不正确！");
-            }
+//            if (StringUtils.isBlank(verify)) {
+//                return R.error("请输入验证码！");
+//            }
+//            if(!random.equalsIgnoreCase(verify)) {
+//                return R.error("验证码不正确！");
+//            }
         } catch (Exception e) {
             logger.error("get verify is error:", e);
             return R.error("验证码校验失败！");
